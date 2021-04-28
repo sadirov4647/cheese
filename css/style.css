@@ -1,0 +1,347 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+:root {
+    --cost-color: #121146;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-display: swap;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+} */
+.container {
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Site Header */
+
+.site-header{
+    height: 780px;
+    background: url(../images/icons.png) #F0F5FB;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.site-nav{
+    display: flex;
+    padding-top: 25px;
+    margin-bottom: 105px;
+    align-items: center; 
+    white-space: nowrap;
+}
+.nav-left-list{
+    list-style-type: none;
+    display: flex;
+    margin-right: 226px;
+    padding: 0;
+    position: relative;
+}
+
+.nav-left-items:not(:last-child){
+    margin-right: 40px;
+}
+.nav-left-list a{
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+}
+.site-logo{
+    margin-right: 175px;
+}
+.site-logo a{
+    display: block;
+}
+.site-nav-right{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.daily-time{
+    font-weight: normal;
+    margin-right: 40px;
+}
+.nav-tel{
+    position: relative;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.nav-tel::before{
+    content: "";
+    background: url(../images/logo/tel.png) no-repeat;
+    width: 33px;
+    height: 33px;
+    background-size: contain;
+    margin-right: 16px;
+}
+.delivery{
+    margin: 0 auto;
+    text-align: center;
+    width: 621px;
+    margin-bottom: 60px;
+}
+.delivery-title{
+    margin: 0;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    position: relative;
+}
+.delivery-desc{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.cheese-section{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+.free-delivery-title{
+    width: 200px;
+    height: 40px;
+    font-weight: normal;
+    position: relative;
+    top: 0;
+}
+.free-delivery-title::before{
+    content: "";
+    display: block;
+    background: url(../images/cheesepart/line.svg) no-repeat;
+    width: 141px;
+    height: 40px;
+    position: absolute;
+    left: -210px;
+    top: 40px;
+}
+.free-delivery-title span{
+    color: red;
+}
+.free-delivery{
+    position: relative;
+    top: 100px;
+}
+.free-delivery::before{
+    content: "";
+    position: absolute;
+    background: url(../images/cheesepart/line.svg) no-repeat;
+    width: 141px;
+    height: 40px;
+    left: -200px;
+    top: 50px;
+}
+.cheese{
+    position: absolute;
+    background: url(../images/cheesepart/pizza.png) no-repeat;
+    background-size: contain;
+    width: 650px;
+    height: 485px;
+    left: 300px;
+    top: 0;
+}
+
+/* Popular dishes section */
+.popular-section{
+    padding-top: 140px; 
+}
+.popular-title{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 0;
+    position: relative;
+}
+.popular-title::after{
+    content: "";
+    position: absolute;
+    background: url(../images/triangle/costkorzinka.png) no-repeat;
+    width: 275px;
+    height: 140px;
+    top: -135px;
+    right: -90px;
+}
+.popular-food-list{
+    list-style-type: none;
+    display: flex;
+    padding-left: 166px;
+    padding-right: 166px;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    position: relative;
+}
+.popular-food-list::before{
+    content: "";
+    position: absolute;
+    background: url(../images/triangle/tirnoq.png) no-repeat;
+    width: 125px;
+    height: 115px;
+    left: -90px;
+}
+.popular-food-list li:hover{
+    background: #59AAF1;
+    cursor: pointer;
+    color: #ffff;
+}
+.popular-food-items{
+    text-decoration: none;
+    padding: 17px 35px;
+    background: linear-gradient(0deg, #ECEEF6, #ECEEF6), #59AAF1;
+    border-radius: 45px;
+}
+
+.popular-food-items a{
+    text-decoration: none;
+    color: #151515;
+}
+.food-active{
+    background: #59AAF1;
+}
+
+
+/* Cards */
+
+main{
+    background-color: #ffffff;
+}
+.food-card-list{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+.food-card-items{
+    padding-top: 36px;
+    padding-left: 25px;
+    padding-right: 15px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 18px;
+    background: url(../images/triangle/rectangle.png) no-repeat;
+    background-size: contain;
+    width: 260px;
+    height: 425px;
+}
+.food-card-items:nth-child(3):before{
+    content: "";
+    background: url(../images/food-card/xit.png) no-repeat;
+    position: absolute;
+    width: 75px;
+    height: 34px;
+    left: 10px;
+    top: 10px;
+}
+.food-card-items:nth-child(4n)::after{
+    content: "";
+    position: absolute;
+    display: block;
+    background: url(../images/triangle/tabaka.png);
+    width: 198px;
+    height: 149px;
+}
+.card-title-wrapper{
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.card-wrapper::before{
+    display: block;
+    content: "";
+    background: url(../images/food-card/pizzasort.png) no-repeat;
+    background-size: contain;
+    padding-right: 30px;
+    padding-left: 20px;
+    margin: 0 auto;
+    width: 170px;
+    height: 173px;
+    margin-bottom: 30px;
+}
+.karbonare::before{
+    background: url(../images/logo/karbonare.jpg) no-repeat;
+    background-size: contain;
+}
+.selmon::before{
+    background: url(../images/logo/selmon.jpg) no-repeat;
+    background-size: contain;
+}
+.mare::before{
+    background: url(../images/logo/mare.jpg) no-repeat;
+    background-size: contain;
+}
+.mare::before{
+    background: url(../images/logo/kvatro.jpg) no-repeat;
+    background-size: contain;
+}
+.formadjo::before{
+    background: url(../images/logo/formadjyu.jpg) no-repeat;
+    background-size: contain;
+}
+.kvadroform::before{
+    background: url(../images/logo/kvadform.jpg) no-repeat;
+    background-size: contain;
+}
+.food-card-title{
+    margin: 0;
+    font-weight: 600;
+    color: black;
+}
+.card-desc{
+    margin: 0;
+    margin-bottom: 18px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.cost{
+    margin-bottom: 18px;
+    text-align: center;
+}
+.cost-btn{
+    border: none;
+    background-color: #ffffff;
+    width: 40px;
+    border-radius: 20px;
+    position: relative;
+    left: 85px;
+    cursor: pointer;
+}
