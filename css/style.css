@@ -22,7 +22,7 @@ img {
     max-width: 100%;
     height: auto;
 }
-/* 
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -32,7 +32,7 @@ img {
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-} */
+}
 .container {
     max-width: 1200px;
     padding-left: 20px;
@@ -172,9 +172,6 @@ img {
 }
 
 /* Popular dishes section */
-.popular-section{
-    padding-top: 140px; 
-}
 .popular-title{
     text-align: center;
     margin-bottom: 50px;
@@ -234,6 +231,11 @@ img {
 
 main{
     background-color: #ffffff;
+    padding-top: 140px;
+    padding-bottom: 127px;
+}
+.food-card{
+    margin-bottom: 55px;
 }
 .food-card-list{
     list-style-type: none;
@@ -257,6 +259,7 @@ main{
     background-size: contain;
     width: 260px;
     height: 425px;
+    margin: 0;
 }
 .food-card-items:nth-child(3):before{
     content: "";
@@ -344,4 +347,151 @@ main{
     position: relative;
     left: 85px;
     cursor: pointer;
+}
+.more{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 103px;
+}
+.more-btn{
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Gallery images */
+.gallery-section{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.gallery-image{
+    width: 260px;
+    height: 260px;
+}
+.left-half-image{
+    background: url(/images/galleryimages/leftimage.png) no-repeat;
+    width: 100px;
+}
+.table-image{
+    background: url(/images/galleryimages/table.png) no-repeat;
+}
+.coffee-image{
+    background: url(/images/galleryimages/coffee.png) no-repeat;
+}
+.free-image{
+    background: url(/images/galleryimages/free.png) no-repeat;
+}
+.sushi-image{
+    background: url(/images/galleryimages/sushi.png) no-repeat;
+}
+.right-half-image{
+    background: url(/images/galleryimages/rightimage.png) no-repeat;
+    width: 100px;
+}
+.instagram{
+    padding: 20px;
+    position: absolute;
+    top: 40px;
+    left: 425px;
+    background: linear-gradient(45.04deg, #FD9924 -51.05%, #F65B16 134.89%);
+    box-shadow: 0px 70px 90px rgba(253, 55, 36, 0.2), 0px 35px 50px rgba(253, 55, 36, 0.2), 0px 20px 25px rgba(253, 55, 36, 0.2);
+    border-radius: 15px;
+}
+.instagram-background{
+    padding: 55px;
+    border: 2px solid #FFFFFF;
+    border-radius: 15px;
+    opacity: 0.9;
+    background:  linear-gradient(45.04deg, #FD9924 -51.05%, #F65B16 134.89%);
+    text-align: center;
+}
+.instagram-background a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+/* Site Footer */
+
+.site-footer{
+    padding-top: 82px;
+    height: 650px;
+    background: url(/images/footer/bg-vegetable.png) #F0F5FB no-repeat;
+    background-size: contain;
+    background-position: center 190px;
+}
+.footer-container{
+    width: 960px;
+    margin: 0 auto;
+}
+.footer-title{
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 150%;
+    margin-bottom: 42px;
+}
+form{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+input{
+    padding: 20px 30px;
+    border-radius: 57px;
+    outline: none;
+    border: none;
+}
+.form-button{
+    display: flex;
+    padding: 18px 58px;
+    cursor: pointer;
+    background: linear-gradient(180deg, #FE5626 0%, #F23F0E 100%), #59AAF1;
+    box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
+    border-radius: 59px;
+    color: #ffffff;
+    border: none;
+}
+.form-button::after{
+    content: "";
+    background: url(/images/footer/arrow.png) no-repeat;
+    width: 35px;
+    height: 11px;
+    margin-left: 31px;
+    transition: ease 0.3s;
+}
+.form-button:hover::after{
+    transform: translateX(10px);
+}
+.footer-image{
+    align-items: center;
+    justify-content: center;
+}
+form::after{
+    position: absolute;
+    content: "";
+    background: url(/images/footer/car.png) no-repeat;
+    width: 684px;
+    height: 342px;
+    left: 150px;
+    top: 60px;
+}
+.footer-end{
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.footer-end a{
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: black;
 }
